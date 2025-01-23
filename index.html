@@ -1,0 +1,260 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Networking</title>
+    <link rel="stylesheet" href="/index.6c52aca7.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">Student Networking</div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#profiles">Profiles</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/arya.bugs/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://github.com/maryam-innovates/ppp" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="darkModeBtn">Dark Mode</button>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Welcome to the Networking Boot</h1>
+        <p>This is a networking boot for CSS major students from all over the world to come, share their goals, wishes, and connect with others.</p>
+      </section>
+      <section id="profiles">
+        <h2>Profiles</h2>
+        <div id="profileCards"></div>
+        <button id="addProfileBtn">Add Your Profile</button>
+      </section>
+      <section id="profileFormSection" style="display:none">
+        <form id="profileForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+          <label for="wantToBe">Wanna Be</label>
+          <input type="text" id="wantToBe" required>
+          <label for="aboutMe">About Me</label>
+          <textarea id="aboutMe" required></textarea>
+          <label for="contact">Instagram</label>
+          <input type="text" id="contact" required>
+          <div class="like-container">
+            <button id="heart" class="heart-icon">&#10084;</button>
+            <span id="like-count">0</span>
+          </div>
+          <label for="flag">Choose a Flag</label>
+          <select id="flag" required>
+            <option value="https://flagcdn.com/w320/af.png">🇨🇮 Afghanistan</option>
+            <option value="https://flagcdn.com/w320/al.png">🇨🇮 Albania</option>
+            <option value="https://flagcdn.com/w320/dz.png">🇨🇮 Algeria</option>
+            <option value="https://flagcdn.com/w320/ad.png">🇨🇮 Andorra</option>
+            <option value="https://flagcdn.com/w320/ao.png">🇨🇮 Angola</option>
+            <option value="https://flagcdn.com/w320/ag.png">🇨🇮 Antigua and Barbuda</option>
+            <option value="https://flagcdn.com/w320/ar.png">🇨🇮 Argentina</option>
+            <option value="https://flagcdn.com/w320/am.png">🇨🇮 Armenia</option>
+            <option value="https://flagcdn.com/w320/au.png">🇨🇮 Australia</option>
+            <option value="https://flagcdn.com/w320/at.png">🇨🇮 Austria</option>
+            <option value="https://flagcdn.com/w320/az.png">🇨🇮 Azerbaijan</option>
+            <option value="https://flagcdn.com/w320/bs.png">🇨🇮 Bahamas</option>
+            <option value="https://flagcdn.com/w320/bh.png">🇨🇮 Bahrain</option>
+            <option value="https://flagcdn.com/w320/bd.png">🇨🇮 Bangladesh</option>
+            <option value="https://flagcdn.com/w320/bb.png">🇨🇮 Barbados</option>
+            <option value="https://flagcdn.com/w320/by.png">🇨🇮 Belarus</option>
+            <option value="https://flagcdn.com/w320/be.png">🇨🇮 Belgium</option>
+            <option value="https://flagcdn.com/w320/bz.png">🇨🇮 Belize</option>
+            <option value="https://flagcdn.com/w320/bj.png">🇨🇮 Benin</option>
+            <option value="https://flagcdn.com/w320/bt.png">🇨🇮 Bhutan</option>
+            <option value="https://flagcdn.com/w320/bo.png">🇨🇮 Bolivia</option>
+            <option value="https://flagcdn.com/w320/ba.png">🇨🇮 Bosnia and Herzegovina</option>
+            <option value="https://flagcdn.com/w320/bw.png">🇨🇮 Botswana</option>
+            <option value="https://flagcdn.com/w320/br.png">🇨🇮 Brazil</option>
+            <option value="https://flagcdn.com/w320/bn.png">🇨🇮 Brunei</option>
+            <option value="https://flagcdn.com/w320/bg.png">🇨🇮 Bulgaria</option>
+            <option value="https://flagcdn.com/w320/bf.png">🇨🇮 Burkina Faso</option>
+            <option value="https://flagcdn.com/w320/bi.png">🇨🇮 Burundi</option>
+            <option value="https://flagcdn.com/w320/cv.png">🇨🇮 Cabo Verde</option>
+            <option value="https://flagcdn.com/w320/kh.png">🇨🇮 Cambodia</option>
+            <option value="https://flagcdn.com/w320/cm.png">🇨🇮 Cameroon</option>
+            <option value="https://flagcdn.com/w320/ca.png">🇨🇮 Canada</option>
+            <option value="https://flagcdn.com/w320/cf.png">🇨🇮 Central African Republic</option>
+            <option value="https://flagcdn.com/w320/td.png">🇨🇮 Chad</option>
+            <option value="https://flagcdn.com/w320/cl.png">🇨🇮 Chile</option>
+            <option value="https://flagcdn.com/w320/cn.png">🇨🇮 China</option>
+            <option value="https://flagcdn.com/w320/co.png">🇨🇮 Colombia</option>
+            <option value="https://flagcdn.com/w320/km.png">🇨🇮 Comoros</option>
+            <option value="https://flagcdn.com/w320/cg.png">🇨🇮 Congo (Congo-Brazzaville)</option>
+            <option value="https://flagcdn.com/w320/cr.png">🇨🇮 Costa Rica</option>
+            <option value="https://flagcdn.com/w320/hr.png">🇨🇮 Croatia</option>
+            <option value="https://flagcdn.com/w320/cu.png">🇨🇮 Cuba</option>
+            <option value="https://flagcdn.com/w320/cy.png">🇨🇮 Cyprus</option>
+            <option value="https://flagcdn.com/w320/cz.png">🇨🇮 Czechia (Czech Republic)</option>
+            <option value="https://flagcdn.com/w320/cd.png">🇨🇮 Democratic Republic of the Congo</option>
+            <option value="https://flagcdn.com/w320/dk.png">🇨🇮 Denmark</option>
+            <option value="https://flagcdn.com/w320/dj.png">🇨🇮 Djibouti</option>
+            <option value="https://flagcdn.com/w320/dm.png">🇨🇮 Dominica</option>
+            <option value="https://flagcdn.com/w320/do.png">🇨🇮 Dominican Republic</option>
+            <option value="https://flagcdn.com/w320/ec.png">🇨🇮 Ecuador</option>
+            <option value="https://flagcdn.com/w320/eg.png">🇨🇮 Egypt</option>
+            <option value="https://flagcdn.com/w320/sv.png">🇨🇮 El Salvador</option>
+            <option value="https://flagcdn.com/w320/gq.png">🇨🇮 Equatorial Guinea</option>
+            <option value="https://flagcdn.com/w320/er.png">🇨🇮 Eritrea</option>
+            <option value="https://flagcdn.com/w320/ee.png">🇨🇮 Estonia</option>
+            <option value="https://flagcdn.com/w320/sz.png">🇨🇮 Eswatini (fmr. Swaziland)</option>
+            <option value="https://flagcdn.com/w320/et.png">🇨🇮 Ethiopia</option>
+            <option value="https://flagcdn.com/w320/fj.png">🇨🇮 Fiji</option>
+            <option value="https://flagcdn.com/w320/fi.png">🇨🇮 Finland</option>
+            <option value="https://flagcdn.com/w320/fr.png">🇨🇮 France</option>
+            <option value="https://flagcdn.com/w320/ga.png">🇨🇮 Gabon</option>
+            <option value="https://flagcdn.com/w320/gm.png">🇨🇮 Gambia</option>
+            <option value="https://flagcdn.com/w320/ge.png">🇨🇮 Georgia</option>
+            <option value="https://flagcdn.com/w320/de.png">🇨🇮 Germany</option>
+            <option value="https://flagcdn.com/w320/gh.png">🇨🇮 Ghana</option>
+            <option value="https://flagcdn.com/w320/gr.png">🇨🇮 Greece</option>
+            <option value="https://flagcdn.com/w320/gd.png">🇨🇮 Grenada</option>
+            <option value="https://flagcdn.com/w320/gt.png">🇨🇮 Guatemala</option>
+            <option value="https://flagcdn.com/w320/gn.png">🇨🇮 Guinea</option>
+            <option value="https://flagcdn.com/w320/gw.png">🇨🇮 Guinea-Bissau</option>
+            <option value="https://flagcdn.com/w320/gy.png">🇨🇮 Guyana</option>
+            <option value="https://flagcdn.com/w320/ht.png">🇨🇮 Haiti</option>
+            <option value="https://flagcdn.com/w320/va.png">🇨🇮 Holy See</option>
+            <option value="https://flagcdn.com/w320/hn.png">🇨🇮 Honduras</option>
+            <option value="https://flagcdn.com/w320/hu.png">🇨🇮 Hungary</option>
+            <option value="https://flagcdn.com/w320/is.png">🇨🇮 Iceland</option>
+            <option value="https://flagcdn.com/w320/in.png">🇨🇮 India</option>
+            <option value="https://flagcdn.com/w320/id.png">🇨🇮 Indonesia</option>
+            <option value="https://flagcdn.com/w320/ir.png">🇨🇮 Iran</option>
+            <option value="https://flagcdn.com/w320/iq.png">🇨🇮 Iraq</option>
+            <option value="https://flagcdn.com/w320/ie.png">🇨🇮 Ireland</option>
+            <option value="https://flagcdn.com/w320/il.png">🇨🇮 Israel</option>
+            <option value="https://flagcdn.com/w320/it.png">🇨🇮 Italy</option>
+            <option value="https://flagcdn.com/w320/jm.png">🇨🇮 Jamaica</option>
+            <option value="https://flagcdn.com/w320/jp.png">🇨🇮 Japan</option>
+            <option value="https://flagcdn.com/w320/jo.png">🇨🇮 Jordan</option>
+            <option value="https://flagcdn.com/w320/kz.png">🇨🇮 Kazakhstan</option>
+            <option value="https://flagcdn.com/w320/ke.png">🇨🇮 Kenya</option>
+            <option value="https://flagcdn.com/w320/ki.png">🇨🇮 Kiribati</option>
+            <option value="https://flagcdn.com/w320/kw.png">🇨🇮 Kuwait</option>
+            <option value="https://flagcdn.com/w320/kg.png">🇨🇮 Kyrgyzstan</option>
+            <option value="https://flagcdn.com/w320/la.png">🇨🇮 Laos</option>
+            <option value="https://flagcdn.com/w320/lv.png">🇨🇮 Latvia</option>
+            <option value="https://flagcdn.com/w320/lb.png">🇨🇮 Lebanon</option>
+            <option value="https://flagcdn.com/w320/ls.png">🇨🇮 Lesotho</option>
+            <option value="https://flagcdn.com/w320/lr.png">🇨🇮 Liberia</option>
+            <option value="https://flagcdn.com/w320/ly.png">🇨🇮 Libya</option>
+            <option value="https://flagcdn.com/w320/li.png">🇨🇮 Liechtenstein</option>
+            <option value="https://flagcdn.com/w320/lt.png">🇨🇮 Lithuania</option>
+            <option value="https://flagcdn.com/w320/lu.png">🇨🇮 Luxembourg</option>
+            <option value="https://flagcdn.com/w320/mg.png">🇨🇮 Madagascar</option>
+            <option value="https://flagcdn.com/w320/mw.png">🇨🇮 Malawi</option>
+            <option value="https://flagcdn.com/w320/my.png">🇨🇮 Malaysia</option>
+            <option value="https://flagcdn.com/w320/mv.png">🇨🇮 Maldives</option>
+            <option value="https://flagcdn.com/w320/ml.png">🇨🇮 Mali</option>
+            <option value="https://flagcdn.com/w320/mt.png">🇨🇮 Malta</option>
+            <option value="https://flagcdn.com/w320/mh.png">🇨🇮 Marshall Islands</option>
+            <option value="https://flagcdn.com/w320/mr.png">🇨🇮 Mauritania</option>
+            <option value="https://flagcdn.com/w320/mu.png">🇨🇮 Mauritius</option>
+            <option value="https://flagcdn.com/w320/mx.png">🇨🇮 Mexico</option>
+            <option value="https://flagcdn.com/w320/fm.png">🇨🇮 Micronesia</option>
+            <option value="https://flagcdn.com/w320/md.png">🇨🇮 Moldova</option>
+            <option value="https://flagcdn.com/w320/mc.png">🇨🇮 Monaco</option>
+            <option value="https://flagcdn.com/w320/mn.png">🇨🇮 Mongolia</option>
+            <option value="https://flagcdn.com/w320/me.png">🇨🇮 Montenegro</option>
+            <option value="https://flagcdn.com/w320/ma.png">🇨🇮 Morocco</option>
+            <option value="https://flagcdn.com/w320/mz.png">🇨🇮 Mozambique</option>
+            <option value="https://flagcdn.com/w320/mm.png">🇨🇮 Myanmar (formerly Burma)</option>
+            <option value="https://flagcdn.com/w320/na.png">🇨🇮 Namibia</option>
+            <option value="https://flagcdn.com/w320/nr.png">🇨🇮 Nauru</option>
+            <option value="https://flagcdn.com/w320/np.png">🇨🇮 Nepal</option>
+            <option value="https://flagcdn.com/w320/nl.png">🇨🇮 Netherlands</option>
+            <option value="https://flagcdn.com/w320/nz.png">🇨🇮 New Zealand</option>
+            <option value="https://flagcdn.com/w320/ni.png">🇨🇮 Nicaragua</option>
+            <option value="https://flagcdn.com/w320/ne.png">🇨🇮 Niger</option>
+            <option value="https://flagcdn.com/w320/ng.png">🇨🇮 Nigeria</option>
+            <option value="https://flagcdn.com/w320/kp.png">🇨🇮 North Korea</option>
+            <option value="https://flagcdn.com/w320/mk.png">🇨🇮 North Macedonia (Macedonia)</option>
+            <option value="https://flagcdn.com/w320/no.png">🇨🇮 Norway</option>
+            <option value="https://flagcdn.com/w320/om.png">🇨🇮 Oman</option>
+            <option value="https://flagcdn.com/w320/pk.png">🇨🇮 Pakistan</option>
+            <option value="https://flagcdn.com/w320/pw.png">🇨🇮 Palau</option>
+            <option value="https://flagcdn.com/w320/ps.png">🇨🇮 Palestine State</option>
+            <option value="https://flagcdn.com/w320/pa.png">🇨🇮 Panama</option>
+            <option value="https://flagcdn.com/w320/pg.png">🇨🇮 Papua New Guinea</option>
+            <option value="https://flagcdn.com/w320/py.png">🇨🇮 Paraguay</option>
+            <option value="https://flagcdn.com/w320/pe.png">🇨🇮 Peru</option>
+            <option value="https://flagcdn.com/w320/ph.png">🇨🇮 Philippines</option>
+            <option value="https://flagcdn.com/w320/pl.png">🇨🇮 Poland</option>
+            <option value="https://flagcdn.com/w320/pt.png">🇨🇮 Portugal</option>
+            <option value="https://flagcdn.com/w320/qa.png">🇨🇮 Qatar</option>
+            <option value="https://flagcdn.com/w320/ro.png">🇨🇮 Romania</option>
+            <option value="https://flagcdn.com/w320/ru.png">🇨🇮 Russia</option>
+            <option value="https://flagcdn.com/w320/rw.png">🇨🇮 Rwanda</option>
+            <option value="https://flagcdn.com/w320/kn.png">🇨🇮 Saint Kitts and Nevis</option>
+            <option value="https://flagcdn.com/w320/lc.png">🇨🇮 Saint Lucia</option>
+            <option value="https://flagcdn.com/w320/vc.png">🇨🇮 Saint Vincent and the Grenadines</option>
+            <option value="https://flagcdn.com/w320/ws.png">🇨🇮 Samoa</option>
+            <option value="https://flagcdn.com/w320/sm.png">🇨🇮 San Marino</option>
+            <option value="https://flagcdn.com/w320/st.png">🇨🇮 Sao Tome and Principe</option>
+            <option value="https://flagcdn.com/w320/sa.png">🇨🇮 Saudi Arabia</option>
+            <option value="https://flagcdn.com/w320/sn.png">🇨🇮 Senegal</option>
+            <option value="https://flagcdn.com/w320/rs.png">🇨🇮 Serbia</option>
+            <option value="https://flagcdn.com/w320/sc.png">🇨🇮 Seychelles</option>
+            <option value="https://flagcdn.com/w320/sl.png">🇨🇮 Sierra Leone</option>
+            <option value="https://flagcdn.com/w320/sg.png">🇨🇮 Singapore</option>
+            <option value="https://flagcdn.com/w320/sk.png">🇨🇮 Slovakia</option>
+            <option value="https://flagcdn.com/w320/si.png">🇨🇮 Slovenia</option>
+            <option value="https://flagcdn.com/w320/sb.png">🇨🇮 Solomon Islands</option>
+            <option value="https://flagcdn.com/w320/so.png">🇨🇮 Somalia</option>
+            <option value="https://flagcdn.com/w320/za.png">🇨🇮 South Africa</option>
+            <option value="https://flagcdn.com/w320/kr.png">🇨🇮 South Korea</option>
+            <option value="https://flagcdn.com/w320/ss.png">🇨🇮 South Sudan</option>
+            <option value="https://flagcdn.com/w320/es.png">🇨🇮 Spain</option>
+            <option value="https://flagcdn.com/w320/lk.png">🇨🇮 Sri Lanka</option>
+            <option value="https://flagcdn.com/w320/sd.png">🇨🇮 Sudan</option>
+            <option value="https://flagcdn.com/w320/sr.png">🇨🇮 Suriname</option>
+            <option value="https://flagcdn.com/w320/se.png">🇨🇮 Sweden</option>
+            <option value="https://flagcdn.com/w320/ch.png">🇨🇮 Switzerland</option>
+            <option value="https://flagcdn.com/w320/sy.png">🇨🇮 Syria</option>
+            <option value="https://flagcdn.com/w320/tj.png">🇨🇮 Tajikistan</option>
+            <option value="https://flagcdn.com/w320/tz.png">🇨🇮 Tanzania</option>
+            <option value="https://flagcdn.com/w320/th.png">🇨🇮 Thailand</option>
+            <option value="https://flagcdn.com/w320/tl.png">🇨🇮 Timor-Leste</option>
+            <option value="https://flagcdn.com/w320/tg.png">🇨🇮 Togo</option>
+            <option value="https://flagcdn.com/w320/to.png">🇨🇮 Tonga</option>
+            <option value="https://flagcdn.com/w320/tt.png">🇨🇮 Trinidad and Tobago</option>
+            <option value="https://flagcdn.com/w320/tn.png">🇨🇮 Tunisia</option>
+            <option value="https://flagcdn.com/w320/tr.png">🇨🇮 Turkey</option>
+            <option value="https://flagcdn.com/w320/tm.png">🇨🇮 Turkmenistan</option>
+            <option value="https://flagcdn.com/w320/tv.png">🇨🇮 Tuvalu</option>
+            <option value="https://flagcdn.com/w320/ug.png">🇨🇮 Uganda</option>
+            <option value="https://flagcdn.com/w320/ua.png">🇨🇮 Ukraine</option>
+            <option value="https://flagcdn.com/w320/ae.png">🇨🇮 United Arab Emirates</option>
+            <option value="https://flagcdn.com/w320/gb.png">🇨🇮 United Kingdom</option>
+            <option value="https://flagcdn.com/w320/us.png">🇨🇮 United States of America</option>
+            <option value="https://flagcdn.com/w320/uy.png">🇨🇮 Uruguay</option>
+            <option value="https://flagcdn.com/w320/uz.png">🇨🇮 Uzbekistan</option>
+            <option value="https://flagcdn.com/w320/vu.png">🇨🇮 Vanuatu</option>
+            <option value="https://flagcdn.com/w320/ve.png">🇨🇮 Venezuela</option>
+            <option value="https://flagcdn.com/w320/vn.png">🇨🇮 Vietnam</option>
+            <option value="https://flagcdn.com/w320/ye.png">🇨🇮 Yemen</option>
+            <option value="https://flagcdn.com/w320/zm.png">🇨🇮 Zambia</option>
+            <option value="https://flagcdn.com/w320/zw.png">🇨🇮 Zimbabwe</option>
+          </select>
+          <button type="submit">Submit</button>
+          <button type="button" id="closeFormBtn">Close</button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/index.16982418.js" defer></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js" defer></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js" defer></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js" defer></script>
+  </body>
+</html>
